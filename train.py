@@ -159,7 +159,7 @@ else:
                                MaskSpectrogram(frequency_mask_max_percentage=0.3,
                                                time_mask_max_percentage=0.1,
                                                probability=0.5)])
-
+    # transform is a paramater for  mb_speech looks like 50/50 split?
     train_dataset = SpeechDataset(transform=train_transform)
     valid_dataset = SpeechDataset(transform=valid_transform)
     indices = list(range(len(train_dataset)))
